@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+   	android:layout_height="fill_parent"
+   	android:background="@drawable/bg"
+	android:orientation="vertical">
+        <LinearLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_horizontal|center_vertical"  >  
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="服务器设置"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff"
+				 />       
+		</LinearLayout>
+	    <TextView 
+			android:text="SMTP服务器" 
+			android:textColor="#FFFFFF"
+			android:layout_marginTop="5dip"
+			android:textSize="17dip"
+			android:gravity="center_horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		/>
+	
+	    <EditText
+	        android:id="@+id/smtpserver"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:background="@drawable/login_edit_normal"
+	        android:ems="10"
+	        android:inputType="textUri|textEmailAddress" >
+"
+	    </EditText>
+	     <TextView 
+			android:text="SMTP端口" 
+			android:textColor="#FFFFFF"
+			android:layout_margin="5dip"
+			android:gravity="center_horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		 />
+	     <EditText
+	         android:id="@+id/smtpport"
+	         android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	         android:layout_centerVertical="true"
+	         android:background="@drawable/login_edit_normal"
+	        android:ems="10"
+	         android:inputType="number"
+	          />
+	     	    <TextView 
+			android:text="IMAP服务器" 
+			android:textColor="#FFFFFF"
+			android:layout_marginTop="5dip"
+			android:textSize="17dip"
+			android:gravity="center_horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		/>
+	
+	    <EditText
+	        android:id="@+id/imapserver"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:background="@drawable/login_edit_normal"
+	        android:ems="10"
+	        android:inputType="textEmailAddress" >
+"
+	    </EditText>
+	     <TextView 
+			android:text="IMAP端口" 
+			android:textColor="#FFFFFF"
+			android:layout_margin="5dip"
+			android:gravity="center_horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		 />
+	     <EditText
+	         android:id="@+id/imapport"
+	         android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	         android:layout_centerVertical="true"
+	         android:background="@drawable/login_edit_normal"
+	        android:ems="10"
+	        android:inputType="number" />
+	     
+     
+     
+      <TextView 
+		android:text="安全类型" 
+		android:textColor="#FFFFFF"
+		android:textSize="17dip"
+		android:layout_margin="5dip"
+		android:gravity="center_horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	 />
+
+      <Spinner
+          android:id="@+id/secuty"
+          android:layout_width="match_parent"
+          android:layout_height="40dip"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:background="@drawable/login_edit_normal" />
+
+ <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+        <Button
+        android:id="@+id/btnok"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dip"
+        android:text="确认"
+        android:background="@drawable/chat_send_btn" 
+        />
+         <Button
+        android:id="@+id/btncancle"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+          android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dip"
+        android:text="取消"
+        android:background="@drawable/chat_send_btn" 
+        />
+      </RelativeLayout>
+</LinearLayout>
